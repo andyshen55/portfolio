@@ -1,4 +1,10 @@
 "use client";
+
+import React from "react";
+
+import dynamic from "next/dynamic";
+const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+
 import {
   Dialog,
   DialogContent,
@@ -32,7 +38,7 @@ function HandoutCard(props: {
 export function Gallery() {
   return (
     <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-      <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+      <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6  xl:grid-cols-4 xl:gap-x-8">
         {handouts.map((handout, idx) => (
           <HandoutCard
             name={handout.name}
@@ -70,11 +76,21 @@ export default function CirclePage() {
         </h2>
         <p>
           I noticed that a lot of the students struggled with the cryptarithms
-          handout. To their credit, some of the problems took the instructors
-          over 25 minutes to solve! Sensing an opportunity to deviate from the
-          handout-centric math curriculum, I animated some videos to motivate a
-          computational approach to problem solving.
+          handout. Sensing an opportunity to deviate from the handout-centric
+          math curriculum, I animated some videos to illustrate how a
+          computational approach to problem solving could automate insight.
         </p>
+      </section>
+      <section className="full-bleed">
+        <div className="flex items-center justify-center p-8">
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=qoU44qFJ95E&list=PLNC_Fddtqhottfl9HtRu48wDEvxC4HmAM"
+            className="react-player"
+            controls={false}
+          />
+        </div>
+      </section>
+      <section>
         <p className="mt-4">
           Once the children were sold on programming, we decided to teach Python
           through a series of{" "}
@@ -90,7 +106,38 @@ export default function CirclePage() {
         </p>
         <p className="mt-4">
           Once the cohort had developed basic Python proficiency, we launched
-          into a quarter long group project.{" "}
+          into a quarter long group project. The goal was to learn the pure math
+          necessary to model the geometry of the game{" "}
+          <a
+            target="_blank"
+            className=" text-violet-600 hover:text-teal-400"
+            href="https://en.wikipedia.org/wiki/Set_(card_game)"
+          >
+            Set
+          </a>
+          , and then program a solver as a class.
+        </p>
+        <p className="mt-2 ">
+          We covered: axioms, groups, modular arithmetic, fields, vector spaces,
+          as well as Python functions and classes.
+        </p>
+        <p className="mt-4 text-base text-right">
+          <a
+            target="_blank"
+            className=" text-violet-600 hover:text-teal-400"
+            href="https://www.overleaf.com/read/njcyczwzgvjv"
+          >
+            TeX for the pure math handouts
+          </a>
+        </p>
+        <p className="text-base text-right">
+          <a
+            target="_blank"
+            className=" text-violet-600 hover:text-teal-400"
+            href="https://github.com/andyshen55/pyset"
+          >
+            Base repo for the PySet solver
+          </a>
         </p>
       </section>
     </>

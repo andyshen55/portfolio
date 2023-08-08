@@ -91,3 +91,8 @@
   width: 100%;
   grid-column: 1 / 4;
 }
+
+.react-player {
+  height: auto !important;
+aspect-ratio: 16/9;
+}
