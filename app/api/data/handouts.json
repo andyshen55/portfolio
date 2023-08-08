@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Cracking Cryptic Messages",
+    "desc": "Cracking basic ciphers with frequency analysis",
+    "topic": "cryptography",
+    "href": "https://drive.google.com/file/d/1biuMlQVxXvUjV6l6s626Aeb-Yrio4EmM/view?usp=sharing"
+  },
+  {
+    "name": "What RSAying?",
+    "desc": "Approximating RSA encryption using abstract algebra",
+    "topic": "cryptography",
+    "href": "https://drive.google.com/file/d/1qWubyz_WOSlqSXa0fe4a-lJMuQfLjI36/view?usp=sharing"
+  },
+  {
+    "name": "Induction, Induction, ...",
+    "desc": "Proving algebraic identities and tromino tiling via induction",
+    "topic": "methods of proof",
+    "href": "https://drive.google.com/file/d/1oGDNZrZ2oAi37llda6nmM5wYBFrFbt9Q/view?usp=sharing"
+  },
+  {
+    "name": "Negation and Contradiction",
+    "desc": "Negating boolean sentences to prove by contradiction",
+    "topic": "methods of proof",
+    "href": "https://drive.google.com/file/d/1zRE7-9hjzHq-3VVx4kPElvVzYk4Fy3xC/view?usp=sharing"
+  },
+
+  {
+    "name": "Planar Graphs",
+    "desc": "Determining graph planarity using Euler's characteristic",
+    "topic": "graph theory",
+    "href": "https://drive.google.com/file/d/1L89VOTvFf7xkCt65oOmpOeCEKhBkBG9J/view?usp=sharing"
+  },
+  {
+    "name": "Finite Automata",
+    "desc": "Feeding binary strings to deterministic finite automata",
+    "topic": "theoretical cs",
+    "href": "https://drive.google.com/file/d/1f0fOKa2IwAfzqHG83kzEr-270MdV3w5H/view?usp=sharing"
+  },
+  {
+    "name": "Stable Matching",
+    "desc": "Exploring Gale-Shapley runtime, correctness, and fairness",
+    "topic": "algorithms",
+    "href": "https://drive.google.com/file/d/1naIO6LQfkyJXHECi4-cOkqxQM7xSvrhZ/view?usp=sharing"
+  },
+
+  {
+    "name": "Cryptarithms",
+    "desc": "Solving digit replacement word puzzles with deductive logic",
+    "topic": "number theory",
+    "href": "https://drive.google.com/file/d/1LWQX7J3DiKXTZhrCma1XPFrxiP7yyjlr/view?usp=sharing"
+  }
+]
