@@ -89,10 +89,10 @@
 
 .full-bleed {
   width: 100%;
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
 }
 
 .react-player {
   height: auto !important;
-aspect-ratio: 16/9;
+  aspect-ratio: 16/9;
 }
