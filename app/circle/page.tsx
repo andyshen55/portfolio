@@ -5,15 +5,6 @@ import React from "react";
 import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-
 import handouts from "../api/data/handouts.json";
 
 function HandoutCard(props: {
@@ -35,7 +26,7 @@ function HandoutCard(props: {
   );
 }
 
-export function Gallery() {
+function Gallery() {
   return (
     <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
       <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6  xl:grid-cols-4 xl:gap-x-8">
@@ -53,6 +44,17 @@ export function Gallery() {
   );
 }
 
+function VideoSection() {
+  return (
+    <div className="flex items-center justify-center p-8">
+      <ReactPlayer
+        url="https://www.youtube.com/watch?v=qoU44qFJ95E&list=PLNC_Fddtqhottfl9HtRu48wDEvxC4HmAM"
+        className="react-player"
+        controls={false}
+      />
+    </div>
+  );
+}
 export default function CirclePage() {
   return (
     <>
@@ -61,10 +63,9 @@ export default function CirclePage() {
           I describe the UCLA Math Circle as a Sunday school for gifted kids.
         </h1>
         <p className="">
-          As a lead instructor at the Circle, I guided my cohort of students
-          through topics from UCLA's undergraduate math curriculum, redesigned
-          for their cognitive capacities. Take a look at some of my favorite
-          handouts that we taught!
+          {
+            "As a lead instructor at the Circle, I guided my cohort of students through topics from UCLA's undergraduate math curriculum, redesigned for their cognitive capacities. Take a look at some of my favorite handouts that we taught!"
+          }
         </p>
       </section>
       <section className="full-bleed">
@@ -82,13 +83,7 @@ export default function CirclePage() {
         </p>
       </section>
       <section className="full-bleed">
-        <div className="flex items-center justify-center p-8">
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=qoU44qFJ95E&list=PLNC_Fddtqhottfl9HtRu48wDEvxC4HmAM"
-            className="react-player"
-            controls={false}
-          />
-        </div>
+        <VideoSection />
       </section>
       <section>
         <p className="mt-4">
