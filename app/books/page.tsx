@@ -84,12 +84,16 @@ function ReviewDialog(props: { reviewSrc: string; closeReview: () => void }) {
       ref={reviewRef}
       className={
         "fixed z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " +
-        "rounded-lg p-4 w-2/3 sm:w-3/4 lg:w-1/3 " +
+        "rounded-lg p-4 w-10/12 lg:w-1/3 overflow-y-scroll " +
         "backdrop-blur-lg bg-stone-100/80 shadow-2xl"
       }
     >
       <p className="text-base italic">{review.quote}</p>
-      <p className="mt-2 tracking-tighter">{review.content}</p>
+      {review.content.split("\n").map((paragraph: string, index: number) => (
+        <p className="mt-2 tracking-tighter" key={index}>
+          {paragraph}
+        </p>
+      ))}
 
       <h2 className="mt-2 font-semibold text-lg text-right">{review.title}</h2>
       <h3 className="font-extralight text-right">{review.author}</h3>
@@ -126,12 +130,14 @@ export default function BooksPage() {
           Unfortunately, that didn’t quite come to pass. Instead, I maintain a
           set of books that have been particularly impactful on my worldview.
         </p>
-        <p className="mt-4 text-lg">
+        <p className="mt-4">
           Drag and click to read my (mostly incoherent) thoughts.
         </p>
       </section>
       <section
-        className={"full-bleed mt-32 " + (isReviewOpen ? "opacity-50" : "")}
+        className={
+          "full-bleed mt-12 sm:mt-32 " + (isReviewOpen ? "opacity-50" : "")
+        }
       >
         <BookSlider setReview={setReview} />
         <Shelf />

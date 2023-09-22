@@ -30,7 +30,7 @@ function HandoutGallery() {
   return (
     <section className="full-bleed">
       <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="grid grid-cols-2 gap-y-10 gap-x-6 lg:grid-cols-4 lg:gap-x-8">
+        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
           {handouts.map((handout, idx) => (
             <HandoutCard
               name={handout.name}
@@ -155,11 +155,10 @@ function ProgrammingSection() {
           We also experimented with teaching programming.
         </h2>
         <p>
-          I noticed that a lot of the students struggled with solving
-          cryptarithms. Sensing an opportunity to deviate from the
-          handout-centric math curriculum, I animated some videos to illustrate
-          how a computational approach to problem solving could automate
-          insight.
+          I noticed that some students struggled with solving cryptarithms.
+          Sensing an opportunity to deviate from pen and paper, I animated some
+          videos to illustrate how a computational approach to problem solving
+          could automate insight.
         </p>
       </section>
       <VideoSection />
