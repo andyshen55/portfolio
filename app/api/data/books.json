@@ -1,72 +1,62 @@
-[
-  {
+{
+  "/books/when-breath-becomes-air.jpeg": {
     "title": "When Breath Becomes Air",
     "author": "Paul Kalanithi",
     "quote": "“You can’t ever reach perfection, but you can believe in an asymptote toward which you are ceaselessly striving.”",
-    "content": "A brilliant neurosurgeon on the cusp of presence is abruptly handed a death sentence. Paul Kalanithi, an otherwise vigorous 36-year-old, is diagnosed with inoperable lung cancer. Confronted with imminent oblivion, Kalanithi explores ideas of life, death and meaning with subdued urgency. A physician to the end, his musings echo reassuringly through the expanse of loss.\nWhen Breath Becomes Air holds a special place in my heart for reinvigorating my love of reading. Kalanithi’s prose is effortless, insightful, and entirely inspiring. There is a quiet beauty in the way he breathes life into past experience- from the radiance of youth to explicit failures as a healer. His musings on perseverance in the face of randomness helped assuage my own qualms over the future.",
-    "src": "/books/when-breath-becomes-air.jpeg"
+    "content": "A brilliant neurosurgeon on the cusp of presence is abruptly handed a death sentence. Paul Kalanithi, an otherwise vigorous 36-year-old, is diagnosed with inoperable lung cancer. Confronted with imminent oblivion, Kalanithi explores ideas of life, death and meaning with subdued urgency. A physician to the end, his musings echo reassuringly through the expanse of loss.\nWhen Breath Becomes Air holds a special place in my heart for reinvigorating my love of reading. Kalanithi’s prose is effortless, insightful, and entirely inspiring. There is a quiet beauty in the way he breathes life into past experience- from the radiance of youth to explicit failures as a healer. His musings on perseverance in the face of randomness helped assuage my own qualms over the future."
   },
-  {
+  "/books/the-way-of-kings.jpeg": {
     "title": "The Way of Kings",
     "author": "Brandon Sanderson",
-    "quote": "“This world, it is a tempest sometimes. But remember, the sun always rises again.”",
-    "content": "When the king of Alethkar is murdered by a white-robed assassin walking on walls, the world of Roshar is plunged into war. The Way of Kings follows 3 parallel stories in the chaos that ensues: a soldier-turned-slave numbed by the horrors of the battlefield, a sheltered artist setting sail to save her family, and a former warlord plagued by prophetic visions of unity. Brandon Sanderson brings a fantastical world to life, filled with ravaging storms, monstrous crustaceans, and priceless weapons capable of unparalleled destruction.\nThe Way of Kings is the first book in The Stormlight Archive, a fantasy of epic proportions. Sanderson’s masterful world building makes every Stormlight book a uniquely addicting experience. I flew through the 4 books currently available in a matter of days, unable to slow myself amidst an avalanche of action. The momentum captivated me, reminding me of simpler days lost in paperback realms.",
-    "src": "/books/the-way-of-kings.jpeg"
+    "quote": "“The purpose of a storyteller is not to tell you how to think, but to give you questions to think upon.”",
+    "content": "When the king of Alethkar is murdered by a white-robed assassin walking on walls, the world of Roshar is plunged into war. The Way of Kings follows 3 parallel stories in the chaos that ensues: a soldier-turned-slave numbed by the horrors of the battlefield, a sheltered artist setting sail to save her family, and a former warlord plagued by prophetic visions of unity. Brandon Sanderson brings a fantastical world to life, filled with ravaging storms, monstrous crustaceans, and priceless weapons capable of unparalleled destruction.\nThe Way of Kings is the first book in The Stormlight Archive, a fantasy of epic proportions. Sanderson’s masterful world building makes every Stormlight book a uniquely addicting experience. I flew through the 4 books currently available in a matter of days, unable to slow myself amidst an avalanche of action. The momentum captivated me, reminding me of simpler days lost in paperback realms."
   },
-  {
+  "/books/between-the-world-and-me.jpeg": {
     "title": "Between the World and Me",
     "author": "Ta-Nehisi Coates",
     "quote": "“We knew we did not lay down the direction of the street, but despite that, we could—and must—fashion the way of our walk.”",
-    "content": "In a heartfelt letter to his adolescent son, a father distills decades of injustice into his account of the Black experience. With visceral eloquence, Ta-Nehisi Coates chronicles a life of violent submission and systematic containment. He details the grim reality of existence, shackled by the paranoid physicality of the streets and the colorless confines of school. Through the bleakness of it all, however, he finds profound beauty—in renewed life, intellectual awakening, and meaning amidst strife.\nBetween the World and Me pulled absolutely no punches with me. I was thoroughly gutted by the weight of the words, the unyielding onslaught of tension dripping like sheets of rain. Coates’ powerful prose granted me a window into his pain and prejudice. The experience was incredibly eye-opening, reframing institutionalized racism within the personal lens of loss. I suspect these words will linger with a longevity beyond their immediacy.",
-    "src": "/books/between-the-world-and-me.jpeg"
+    "content": "In a heartfelt letter to his adolescent son, a father distills decades of injustice into his account of the Black experience. With visceral eloquence, Ta-Nehisi Coates chronicles a life of violent submission and systematic containment. He details the grim reality of existence, shackled by the paranoid physicality of the streets and the colorless confines of school. Through the bleakness of it all, however, he finds profound beauty—in renewed life, intellectual awakening, and meaning amidst strife.\nBetween the World and Me pulled absolutely no punches with me. I was thoroughly gutted by the weight of the words, the unyielding onslaught of tension dripping like sheets of rain. Coates’ powerful prose granted me a window into his pain and prejudice. The experience was incredibly eye-opening, reframing institutionalized racism within the personal lens of loss. I suspect these words will linger with a longevity beyond their immediacy."
   },
-  {
-    "title": "The Gene",
+  "/books/the-gene.jpeg": {
+    "title": "The Gene: An Intimate History",
     "author": "Siddhartha Mukherjee",
     "quote": "“An upright organism with opposable thumbs is thus built from a script but built to go off-script.”",
-    "content": "Encoded within the fundamental unit of our biology, lies past present and future. Through a seemingly sporadic sequence of discoveries, Siddhartha Mukherjee explores the grammar of our genesis. He touches on the fundamental tension in genomic creation, delighting in its delicate duality. Strand paired with strand, past intertwined with future.\nThe Gene, with all its intoxicating deliberation, made me marvel at the beauty of the body. It seemed impossibly elegant that the entire continuum of human complexity can be decomposed into 4 letters. I found parallels to computer science interspersed throughout the book, from our genetic instruction set to the recursive process of gene regulation. What idea is more compelling idea than deciphering our very creation?",
-    "src": "/books/the-gene.jpeg"
+    "content": "Encoded within the fundamental unit of our biology, lies past present and future. Through a seemingly sporadic sequence of discoveries, Siddhartha Mukherjee explores the grammar of our genesis. He touches on the fundamental tension in genomic creation, delighting in its delicate duality. Strand paired with strand, past intertwined with future.\nThe Gene, with all its intoxicating deliberation, made me marvel at the beauty of the body. It seemed impossibly elegant that the entire continuum of human complexity can be decomposed into 4 letters. I found parallels to computer science interspersed throughout the book, from our genetic instruction set to the recursive process of gene regulation. What idea is more compelling idea than deciphering our very creation?"
   },
-  {
+  "/books/stories-of-your-life-and-others.jpeg": {
     "title": "Stories of Your Life and Others",
     "author": "Ted Chiang",
-    "quote": "If you could see your whole life laid out in front of you, would you change things?",
-    "content": "A collection that spans time, space, and alternate reality. Ted Chiang explores hard questions of philosophy and science, while tethering himself in the softness of humanity. From the syntax of perception to paradoxes of free will, these stories frame the human condition through the lens of technology. \nStories of Your Life and Others left me mesmerized and yearning for more. Chiang writes with effortless clarity, embedding profound, universal truths in unassuming narratives. I particularly enjoyed Story of Your Life, Division by Zero, and Understand. With every story, he gently nudged my worldview, expanding the horizon of what fiction – and life itself – can entail.",
-    "src": "/books/stories-of-your-life-and-others.jpeg"
+    "quote": "“If you could see your whole life laid out in front of you, would you change things?”",
+    "content": "A collection that spans time, space, and alternate reality. Ted Chiang explores hard questions of philosophy and science with answers tethered to the softness of humanity. From the syntax of perception to paradoxes of free will, his stories frame the human condition within the lens of technology. \nStories of Your Life and Others left me mesmerized and yearning for more. Chiang writes with effortless clarity, embedding profound, universal truths in unassuming narratives. I particularly enjoyed Story of Your Life, Division by Zero, and Understand. With every story, he gently nudged my worldview, expanding the horizon of what fiction – and life itself – can entail."
   },
-  {
+  "/books/hard-boiled-wonderland-and-the-end-of-the-world.jpeg": {
     "title": "Hard-Boiled Wonderland and the End of the World",
     "author": "Haruki Murakami",
-    "quote": "The best musicians transpose consciousness into sound; painters do the same for color and shape.",
-    "content": "In a dual narrative that oscillates between cyberpunk dystopia and an ethereal world, Haruki Murakami paints a dreamy picture of consciousness and self. With every flip between worlds, the boundaries of reality monotonically fray.\nHard-Boiled Wonderland and the End of the World is the first Murakami I read. It opened the floodgates for me, pulling me into the mundane yet surreal rhythm of Murakami. Like a sleepwalker, I unconsciously devoured the rest of his writing.",
-    "src": "/books/hard-boiled-wonderland-and-the-end-of-the-world.jpeg"
+    "quote": "“The best musicians transpose consciousness into sound; painters do the same for color and shape.”",
+    "content": "In a dual narrative that oscillates between cyberpunk dystopia and an ethereal world, Haruki Murakami paints a dreamy picture of consciousness and self. With every flip between worlds, the boundaries of reality monotonically fray.\nHard-Boiled Wonderland and the End of the World is the first Murakami I read. It opened the floodgates for me, pulling me into the mundane yet surreal rhythm of Murakami. Like a sleepwalker, I unconsciously devoured the rest of his writing."
   },
-  {
+  "/books/kafka-on-the-shore.jpeg": {
     "title": "Kafka on the Shore",
     "author": "Haruki Murakami",
-    "quote": "But metaphors help eliminate what separates you and me.",
-    "content": "Mysticism intertwines with reality in Haruki Murakami’s lyrical narrative. Two perspectives run parallel - a precociously independent 15 year old, and a rambling old man that converse with cats. As the lines between their narratives blur, the reality Murakami conjures prophetically converges. \nKafka on the Shore was a foray into a forest of the unconscious. Every page dripped with a self-contained consistency. It felt like a lucid dream, unsettling yet captivating, reminding me of the fragile line between the mundane and the magical.",
-    "src": "/books/kafka-on-the-shore.jpeg"
+    "quote": "“But metaphors help eliminate what separates you and me.”",
+    "content": "Mysticism intertwines with reality in Haruki Murakami’s lyrical narrative. Two perspectives run parallel - a precociously independent 15 year old, and a rambling old man that converse with cats. As the lines between their narratives blur, the reality Murakami conjures prophetically converges.\nKafka on the Shore was a foray into a forest of the unconscious. Every page dripped with a self-contained consistency. It felt like I was traversing a dream, with Murakami himself whispering the path forward. I basked in his words, losing and finding myself simultaneously."
   },
-  {
+  "/books/the-seven-husbands-of-evelyn-hugo.jpeg": {
     "title": "The Seven Husbands of Evelyn Hugo",
     "author": "Taylor Jenkins Reid",
-    "quote": "“Sometimes reality comes crashing down on you. Other times reality simply waits, patiently, for you to run out of the energy it takes to deny it.”",
-    "content": "A glamorous Hollywood actress at the height of her fame decides to unravel the truth behind her glittering life to a rookie journalist. Evelyn Hugo’s life is a chronicle of ambition, love, and betrayal played out under the blinding spotlight of public scrutiny. Each husband marks a phase, an era, a mood.\nThe Seven Husbands of Evelyn Hugo is a multifaceted diamond. Taylor Jenkins Reid explores the duality of public perception and personal truth with surgical precision. The narrative drew me in from the outset, and I felt a profound connection to Evelyn's resilience and vulnerability. This novel unfurls the intricacies of love in all its multifarious shades.",
-    "src": "/books/the-seven-husbands-of-evelyn-hugo.jpeg"
+    "quote": "“I’m under absolutely no obligation to make sense to you.”",
+    "content": "A glamorous Hollywood actress at the height of her fame decides to unravel the truth behind her glittering life to a rookie journalist. Evelyn Hugo’s life is a chronicle of ambition, love, and betrayal played out under the blinding spotlight of public scrutiny. Each husband marks a phase, an era, a mood.\nThe Seven Husbands of Evelyn Hugo is a multifaceted diamond. Taylor Jenkins Reid explores the duality of public perception and personal truth with surgical precision. The narrative drew me in from the outset, and I felt a profound connection to Evelyn's resilience and vulnerability. This novel unfurls the intricacies of love in all its multifarious shades."
   },
-  {
+  "/books/the-brothers-karamazov.jpeg": {
     "title": "The Brothers Karamazov",
     "author": "Fyodor Dostoevsky",
-    "quote": "“Above all, don't lie to yourself. The man who lies to himself and listens to his own lie comes to a point that he cannot distinguish the truth within him.”",
-    "content": "Dostoevsky plunges into the depths of the human psyche, weaving a tale of three brothers and their tumultuous relationship with their father. From philosophical debates on God's existence to the stark realities of lust, envy, and pride, the novel delves into the eternal questions of good and evil. Set against the backdrop of 19th-century Russia, it's a journey through the complexities of family, faith, and the human soul.\nThe Brothers Karamazov is a philosophical behemoth. The depth and introspection with which Dostoevsky has handled every character made me reflect deeply on my own beliefs. Every page resonated with profound insight, and I was often left pondering the moral complexities presented long after putting the book down.",
-    "src": "/books/the-brothers-karamazov.jpeg"
+    "quote": "“I have so much to say to you that I am afraid I shall tell you nothing.”",
+    "content": "Set in frigid 19th-century Russia, Fyodor Dostoevsky’s magnum opus explores grand themes of theology, philosophy, and raw humanity. Three brothers, as distinct as can be, grapple with the most arduous questions of existence, God, and morality. Through murder and mystery, their fates unfold.\nThe Brothers Karamazov was a challenging read.  Between the immense cast of characters and the winding descriptions of angst, Dostoevsky’s world was difficult to traverse. Each page dripped with equal parts cerebral intensity and emotional turmoil. It left me contemplative and frustrated, moored in the gray areas of morality and faith."
   },
-  {
+  "/books/east-of-eden.jpeg": {
     "title": "East of Eden",
     "author": "John Steinbeck",
     "quote": "“And now that you don't have to be perfect, you can be good.”",
-    "content": "Steinbeck's magnum opus is a retelling of the biblical story of Cain and Abel set in the fertile Salinas Valley of California. Spanning across generations, it's a tale of two families, the Trasks and the Hamiltons, and their interwoven destinies. Through their stories, Steinbeck explores the perennial battle between good and evil, the nature of inheritance, and the possibility of redemption.\nEast of Eden resonated with me on a deeply personal level. Steinbeck’s mastery in creating vivid landscapes and even more vivid characters made the narrative deeply evocative. The novel's exploration of the choices we make, the legacies we inherit, and the quest for personal redemption compelled me to reflect on my own journey.",
-    "src": "/books/east-of-eden.jpeg"
+    "content": "In the lush Salinas Valley of northern California, familial roots and Biblical destinies converge. John Steinbeck weaves a multi-generational epic of duality – good against evil, East encroaching on West, and freedom resisting determinism. Each character is a pool of light and shadow, a composition of Cain and Abel.\nEast of Eden* is largely a book about life. Steinbeck’s characters pulse with vitality, pushing against narratives with realistic spirit. As an immigrant into the West, the nuances of Eastern otherness resonated with me. I felt the conflicts within myself: of sibling love and hatred, of purity discolored. Life feels fuller having experienced Steinbeck’s tapestry."
   }
-]
+}
