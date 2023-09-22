@@ -6,7 +6,10 @@ import { useEffect, useState, useRef } from "react";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 
-import books from "../api/data/books.json";
+import { BookMap, BookEntry } from "./types";
+import booksData from "../api/data/books.json";
+
+const books: BookMap = booksData as BookMap;
 
 function Shelf() {
   return (
@@ -59,7 +62,7 @@ function BookSlider(props: { setReview: (src: string) => void }) {
 }
 
 function ReviewDialog(props: { reviewSrc: string; closeReview: () => void }) {
-  const reviewRef = useRef(null);
+  const reviewRef = useRef<any>(null);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
