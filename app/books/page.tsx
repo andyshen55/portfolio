@@ -11,7 +11,7 @@ import books from "../api/data/books.json";
 function Shelf() {
   return (
     <div className="absolute w-full h-16 shadow-2xl">
-      <Image src="/books/shelf_full.jpeg" alt="" layout="fill" />
+      <Image src="/books/shelf_full.jpeg" alt="" fill />
     </div>
   );
 }
@@ -27,15 +27,15 @@ function Book(props: { src: string; setReview: () => void }) {
         src={props.src}
         height={400}
         width={200}
-        className="hover:opacity-50"
+        className="hover:opacity-50 w-auto"
       />
     </div>
   );
 }
 
-function BookSlider(props: { setReview: () => void }) {
+function BookSlider(props: { setReview: (src: string) => void }) {
   const sliderOptions = {
-    loop: false,
+    loop: true,
     slides: { perView: 8 },
     breakpoints: {
       "(max-width: 1200px)": {
@@ -51,22 +51,14 @@ function BookSlider(props: { setReview: () => void }) {
 
   return (
     <div ref={sliderRef} className="keen-slider mx-4">
-      {books.map((book, idx) => (
-        <Book
-          src={book.src}
-          setReview={props.setReview}
-          key={idx}
-          // title={book.title}
-          // content={book.content}
-          // quote={book.quote}
-          // author={book.author}
-        />
+      {Object.entries(books).map(([src, review]) => (
+        <Book src={src} key={src} setReview={() => props.setReview(src)} />
       ))}
     </div>
   );
 }
 
-function Review(props: { closeReview: () => void }) {
+function ReviewDialog(props: { reviewSrc: string; closeReview: () => void }) {
   const reviewRef = useRef(null);
 
   useEffect(() => {
@@ -85,46 +77,63 @@ function Review(props: { closeReview: () => void }) {
     };
   }, [props]);
 
+  const review = books[props.reviewSrc];
+
   return (
     <div
       ref={reviewRef}
-      className="fixed z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-4 bg-slate-300"
+      className={
+        "fixed z-50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " +
+        "rounded-lg p-4 w-2/3 sm:w-3/4 lg:w-1/3 " +
+        "backdrop-blur-lg bg-stone-100/80 shadow-2xl"
+      }
     >
-      <p>test</p>
+      <p className="text-base italic">{review.quote}</p>
+      <p className="mt-2 tracking-tighter">{review.content}</p>
+
+      <h2 className="mt-2 font-semibold text-lg text-right">{review.title}</h2>
+      <h3 className="font-extralight text-right">{review.author}</h3>
     </div>
   );
 }
 
 export default function BooksPage() {
   const [isReviewOpen, setIsReviewOpen] = useState(false);
+  const [reviewSrc, setReviewSrc] = useState("");
 
-  function swapReview() {
+  function setReview(reviewSrc: string) {
     setIsReviewOpen(true);
+    setReviewSrc(reviewSrc);
   }
 
   function closeReview() {
     setIsReviewOpen(false);
+    setReviewSrc("");
   }
 
   return (
     <>
-      {isReviewOpen && <Review closeReview={closeReview} />}
+      {isReviewOpen && (
+        <ReviewDialog reviewSrc={reviewSrc} closeReview={closeReview} />
+      )}
 
-      <section>
+      <section className={isReviewOpen ? "opacity-50" : ""}>
         <h1 className="font-semibold text-xl tracking-tighter">
           My dream job growing up was to be a librarian.
         </h1>
         <p className="mt-2">
           In my mind that meant getting paid to read books all day.
-          Unfortunately, that didn’t come to pass. Instead, I maintain a set of
-          books that have been particularly impactful on my worldview.
+          Unfortunately, that didn’t quite come to pass. Instead, I maintain a
+          set of books that have been particularly impactful on my worldview.
         </p>
         <p className="mt-4 text-lg">
-          Click and drag to read my (mostly incoherent) thoughts.
+          Drag and click to read my (mostly incoherent) thoughts.
         </p>
       </section>
-      <section className="full-bleed mt-32">
-        <BookSlider setReview={swapReview} />
+      <section
+        className={"full-bleed mt-32 " + (isReviewOpen ? "opacity-50" : "")}
+      >
+        <BookSlider setReview={setReview} />
         <Shelf />
       </section>
     </>
