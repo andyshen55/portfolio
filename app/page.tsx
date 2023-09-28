@@ -13,7 +13,10 @@ function Badge(
     <a
       {...props}
       target="_blank"
-      className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 rounded p-1 text-sm inline-flex items-center leading-4 text-neutral-900 dark:text-neutral-100 no-underline"
+      className={
+        "border border-neutral-200 bg-neutral-50 text-neutral-900 no-underline" +
+        "rounded p-1 text-sm inline-flex items-center leading-4"
+      }
     />
   );
 }
@@ -65,7 +68,7 @@ export default function Home() {
             <Image src="/ixl.png" width="25" height="25" alt="IXL logo" />
             &thinsp; Learning
           </Badge>
-          , where I help improve the teacher experience for coordinating
+          , where I help improve the Teacher Experience for coordinating
           classrooms. Before that, I was a lead instructor at the{" "}
           <Badge href="https://circles.math.ucla.edu/">
             <Image src="/ormc.png" width="13" height="13" alt="ORMC logo" />
@@ -77,7 +80,7 @@ export default function Home() {
         <p className="mt-8">
           Take a look at some{" "}
           <Link
-            className=" text-violet-600 hover:text-teal-400 transition-all"
+            className=" text-indigo-600 hover:text-teal-400 transition-all"
             href="/circle"
           >
             puzzling math{" "}

@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + " wrapper mt-8 mb-40"}>
+      <body className={inter.className + " wrapper mt-8 mb-24"}>
         <NavBar />
         {children}
       </body>
