@@ -13,7 +13,7 @@ const books: BookMap = booksData as BookMap;
 
 function Shelf() {
   return (
-    <div className="absolute w-full h-16 shadow-2xl">
+    <div className="absolute w-[105%] h-16 shadow-2xl">
       <Image src="/books/shelf_full.jpeg" alt="" fill />
     </div>
   );
