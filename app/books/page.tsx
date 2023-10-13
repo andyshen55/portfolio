@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 
 import "keen-slider/keen-slider.min.css";
-import { useKeenSlider } from "keen-slider/react";
+import { useKeenSlider, KeenSliderPlugin } from "keen-slider/react";
 
-import { BookMap, BookEntry } from "./types";
+import { BookMap } from "./types";
 import booksData from "../api/data/books.json";
 
 const books: BookMap = booksData as BookMap;
@@ -37,6 +37,64 @@ function Book(props: { src: string; setReview: () => void }) {
 }
 
 function BookSlider(props: { setReview: (src: string) => void }) {
+  const WheelControls: KeenSliderPlugin = (slider) => {
+    let touchTimeout: ReturnType<typeof setTimeout>;
+    let position: {
+      x: number;
+      y: number;
+    };
+    let wheelActive: boolean;
+
+    function dispatch(e: WheelEvent, name: string) {
+      position.x -= e.deltaX;
+      position.y -= e.deltaY;
+      slider.container.dispatchEvent(
+        new CustomEvent(name, {
+          detail: {
+            x: position.x,
+            y: position.y,
+          },
+        })
+      );
+    }
+
+    function wheelStart(e: WheelEvent) {
+      position = {
+        x: e.pageX,
+        y: e.pageY,
+      };
+      dispatch(e, "ksDragStart");
+    }
+
+    function wheel(e: WheelEvent) {
+      dispatch(e, "ksDrag");
+    }
+
+    function wheelEnd(e: WheelEvent) {
+      dispatch(e, "ksDragEnd");
+    }
+
+    function eventWheel(e: WheelEvent) {
+      e.preventDefault();
+      if (!wheelActive) {
+        wheelStart(e);
+        wheelActive = true;
+      }
+      wheel(e);
+      clearTimeout(touchTimeout);
+      touchTimeout = setTimeout(() => {
+        wheelActive = false;
+        wheelEnd(e);
+      }, 50);
+    }
+
+    slider.on("created", () => {
+      slider.container.addEventListener("wheel", eventWheel, {
+        passive: false,
+      });
+    });
+  };
+
   const sliderOptions = {
     loop: true,
     slides: { perView: 8 },
@@ -50,7 +108,10 @@ function BookSlider(props: { setReview: (src: string) => void }) {
     },
   };
 
-  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>(sliderOptions);
+  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>(
+    sliderOptions,
+    [WheelControls]
+  );
 
   return (
     <div ref={sliderRef} className="keen-slider mx-4">
